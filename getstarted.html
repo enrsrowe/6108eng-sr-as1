@@ -4,8 +4,8 @@
     <meta charset="utf-8">
     <title>OSC | Get Started</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="description" content="Oval Ski Club">
+    <meta name="author" content="Sam Rowell">
 
     <!-- The styles -->
     <link href="assets/css/bootstrap.css" rel="stylesheet">
@@ -42,7 +42,7 @@
           </a>
 
           <a class="brand" href="index.html">
-            <img src="assets/img/logo.png" height="20px" width="130">
+            <img alt="Oval Ski Club" src="assets/img/logo.png" height="20px" width="130">
           </a> <!--<img src="assets/img/logo.png">-->
 
           <div class="nav-collapse collapse">
@@ -54,16 +54,33 @@
               <li><a href="gallery.html">Gallery</a></li>
               <li><a href="joinus.html">Join Us</a></li>      
             </ul> 
-            <!-- <form class="navbar-form pull-right">
-              <input class="span2" type="text" placeholder="Email">
-              <input class="span2" type="password" placeholder="Password">
-              <button type="submit" class="btn">Sign in</button>
-            </form> -->
+                <!-- Button to trigger modal -->
+                <a href="#myModal" role="button" class="btn pull-right" data-toggle="modal">Login</a>
           </div><!--/.nav-collapse -->
         </div>
       </div>
     </div>
     <!-- END MAIN MENU -->
+     
+    <!-- Modal -->
+    <div class="modal hide fade in" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+        <h3 id="myModalLabel">Modal header</h3>
+      </div>
+      <div class="modal-body">
+        <p>Please login to continue...</p>
+          <form class="navbar-form" method="post" action="login.html">
+            <input class="span2" type="text" placeholder="Email">
+            <p></p>
+            <input class="span2" type="password" placeholder="Password">
+          </form>             
+      </div>
+      <div class="modal-footer">
+        <button class="btn" data-dismiss="modal" aria-hidden="true">Cancel</button>
+        <button type="submit" class="btn btn-primary size="30"">Sign in</button>
+      </div>
+    </div>
 
   <div class="container">
       <h2>Get Started</h2>
@@ -81,7 +98,7 @@
           <p><a class="btn" href="whatson.html">Check Dates &raquo;</a></p>
 
           <h4>What we do!</h4>
-          <p><iframe width="560" height="315" src="http://www.youtube.com/embed/yOveLBduJKk" frameborder="0" allowfullscreen></iframe></p>
+          <p><iframe width="500" height="315" src="http://www.youtube.com/embed/yOveLBduJKk" frameborder="0" allowfullscreen></iframe></p>
           
           <h4>Family Sessions</h4>
           <p>We provide family ski sessions once a month on a Sunday evening. We ask that all skiers must be able to turn and stop safely during these sessions to avoid any collisions with little ones. Please note that there will be no instruction during these sessions.
@@ -204,7 +221,8 @@
       </div>
 
     <hr>
-   <footer>
+
+  <footer>
         <div class="row">
           <div class="span4">
           <p>&copy; Oval Ski Club 2012 |  Made with 
@@ -213,20 +231,19 @@
           <div class="pull-right">       
             <a href="http://www.facebook.com/group.php?gid=2256597544" target="_blank"> <img src="assets/img/facebook.png" height="25" width="25" alt="Facebook"/></a>
             <a href="http://www.twitter.com" target="_blank"> <img src="assets/img/twitter.png" height="25" width="25" alt="Twitter"/></a>
-            <a class="btn btn-mini pull-right"  href="#"><i class="icon-chevron-up"></i> To the top.</a>
+            <a class="btn btn-mini"  href="#"><i class="icon-chevron-up"></i> To the top.</a>
           </div>
         </div>
       </footer>
 
-  </div>
+    </div>     <!-- /container -->
 
-       <!-- The javascript
+        <!-- The javascript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="assets/js/jquery-1.8.2.js"></script>
-    <script src="assets/js/bootstrap.js"></script>
-    <script src="assets/js/bootstrap.min.js"></script>
-     
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/bootstrap-transition.js"></script>
+    <script src="assets/js/bootstrap-alert.js"></script>
     <script src="assets/js/bootstrap-modal.js"></script>
     <script src="assets/js/bootstrap-dropdown.js"></script>
     <script src="assets/js/bootstrap-scrollspy.js"></script>
@@ -236,8 +253,7 @@
     <script src="assets/js/bootstrap-button.js"></script>
     <script src="assets/js/bootstrap-collapse.js"></script>
     <script src="assets/js/bootstrap-carousel.js"></script>
-    <script src="assets/js/bootstrap-typeahead.js"></script> 
-
+    <script src="assets/js/bootstrap-typeahead.js"></script>
 
   </body>
 </html>
