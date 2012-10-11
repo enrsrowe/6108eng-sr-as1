@@ -55,15 +55,15 @@
               <li><a href="joinus.html">Join Us</a></li>      
             </ul>           
                 <!-- Button to trigger modal -->
-                <a href="#myModal" role="button" class="btn pull-right" data-toggle="modal">Login</a>
+                <a href="#LoginModal" role="button" class="btn pull-right" data-toggle="modal">Login</a>
           </div><!--/.nav-collapse -->
         </div>
       </div>
     </div>
     <!-- END MAIN MENU -->
      
-    <!-- Modal -->
-    <div class="modal hide fade in" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <!-- Login Modal -->
+    <div class="modal hide fade in" id="LoginModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
         <h3 id="myModalLabel">Member Login</h3>
@@ -83,6 +83,7 @@
                 <input type="password" id="inputPassword" placeholder="Password">
               </div>
             </div>
+            <a href="#PassRetModal" class="controls" data-dismiss="modal" data-toggle="modal" >Forgotten Password?</a> <!-- Button to trigger password ret modal -->    
             <div class="control-group">
               <div class="controls">
                 <label class="checkbox">
@@ -92,8 +93,104 @@
           </form>             
       </div>
       <div class="modal-footer">
+        <a href="#RegisterModal" role="button" class="btn btn-info pull-left" data-dismiss="modal" data-toggle="modal">Register</a> <!-- Button to trigger registration modal -->
         <button class="btn" data-dismiss="modal" aria-hidden="true">Cancel</button>
         <button type="submit" class="btn btn-primary" form="login_form" >Sign in</button>
+      </div>
+    </div>
+
+    <!-- Password Retrieval Modal -->
+    <div class="modal hide fade in" id="PassRetModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+        <h3 id="myModalLabel">Password Retrieval</h3>
+      </div>
+      <div class="modal-body">
+        <p></p>
+          <form id="PassRet_form" class="form-horizontal" method="post" action="login.html">
+            <div class="control-group">
+              <label class="control-label" for="inputEmail">Email</label>
+              <div class="controls">
+                <input type="text" id="inputEmail" placeholder="Email">
+              </div>
+            </div>
+            <div class="control-group">
+              <label class="control-label" for="inputPassword">Password</label>
+              <div class="controls">
+                <input type="password" id="inputPassword" placeholder="Password">
+              </div>
+            </div>
+          </form>             
+      </div>
+      <div class="modal-footer">
+        <button class="btn" data-dismiss="modal" aria-hidden="true">Cancel</button>
+        <button type="submit" class="btn btn-primary" form="PassRet_form" >Continue</button>
+      </div>
+    </div>
+
+   <!-- Registration Modal -->
+    <div class="modal hide fade in" id="RegisterModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+        <h3 id="myModalLabel">Welcome!</h3>
+      </div>
+      <div class="modal-body">
+        <p></p>
+          <form id="register_form" class="form-horizontal" method="post" action="login.html">
+            <div class="control-group">
+              <label class="control-label" for="inputEmail">First Name:</label>
+              <div class="controls">
+                <input type="text" id="inputFName" placeholder="First Name">
+              </div>
+            </div>
+            <div class="control-group">
+              <label class="control-label" for="inputEmail">Surname:</label>
+              <div class="controls">
+                <input type="text" id="inputSName" placeholder="Second Name">
+              </div>
+            </div>
+            <div class="control-group">
+              <label class="control-label" for="inputEmail">Your Email:</label>
+              <div class="controls">
+                <input type="text" id="inputEmail" placeholder="Email">
+              </div>
+            </div>
+            <div class="control-group">
+              <label class="control-label" for="inputEmail">Re-enter Email:</label>
+              <div class="controls">
+                <input type="text" id="inputEmail2" placeholder="Email">
+              </div>
+            </div>
+            <div class="control-group">
+              <label class="control-label" for="inputPassword">New Password:</label>
+              <div class="controls">
+                <input type="password" id="inputPassword" placeholder="Password">
+              </div>
+            </div>
+            <div class="control-group">
+              <label class="control-label" for="inputPassword">Confirm Password:</label>
+              <div class="controls">
+                <input type="password" id="inputPassword" placeholder="Password">
+              </div>
+            </div>
+            <div class="control-group">
+              <label class="control-label" for="inputAbility">Skiing Experience:</label>
+              <div class="controls">
+                <select>
+                  <option>Beginner</option>
+                  <option>Intermediate</option>
+                  <option>Professional</option>
+                  <option>None Skier</option>
+                  <option>Disabled</option>
+                </select>
+              </div>
+            </div>
+
+          </form>             
+      </div>
+      <div class="modal-footer">
+        <button class="btn" data-dismiss="modal" aria-hidden="true">Cancel</button>
+        <button type="submit" class="btn btn-primary" form="login_form" >Register</button>
       </div>
     </div>
 
