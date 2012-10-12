@@ -7,6 +7,10 @@
     <meta name="description" content="Oval Ski Club">
     <meta name="author" content="Sam Rowell">
 
+    <!--Redirect to home page 
+    <meta http-equiv="refresh" content="4"; URL="index.html">
+    <meta name="keywords" content="automatic redirection"> -->
+
     <!-- The styles -->
     <link href="assets/css/bootstrap.css" rel="stylesheet">
     <style type="text/css">
@@ -41,48 +45,44 @@
             <span class="icon-bar"></span>
           </a>
 
-          <a class="brand" href="index.html">
+          <a class="brand" href="index.html" accesskey="H">
             <img src="assets/img/logo.png" height="20px" width="130">
           </a> <!--<img src="assets/img/logo.png">-->
 
           <div class="nav-collapse collapse">
             <ul class="nav" style="margin-top: 0px;">
-              <li><a href="getstarted.html">Get Started</a></li>
-              <li><a href="aboutus.html">About Us</a></li>
-              <li><a href="whatson.html">Whats on</a></li>
-              <li><a href="race.html">Race</a></li>
-              <li><a href="gallery.html">Gallery</a></li>
-              <li><a href="joinus.html">Join Us</a></li>      
-            </ul> 
-                            <!-- Button to trigger modal -->
-                <a href="#myModal" role="button" class="btn pull-right" data-toggle="modal">Login</a>
+              <li><a href="getstarted.html" accesskey="1">Get Started</a></li>
+              <li><a href="aboutus.html" accesskey="2">About Us</a></li>
+              <li><a href="whatson.html" accesskey="3">Whats on</a></li>
+              <li><a href="race.html" accesskey="4">Race</a></li>
+              <li><a href="gallery.html" accesskey="5">Gallery</a></li>
+              <li><a href="joinus.html" accesskey="6">Join Us</a></li>      
+            </ul>           
+            <!-- Button to trigger modal -->
+            <a href="#LoginModal" role="button" class="btn pull-right" data-toggle="modal" accesskey="L">Login</a>
           </div><!--/.nav-collapse -->
         </div>
       </div>
     </div>
     <!-- END MAIN MENU -->
      
+     
     <!-- Modal -->
     <div class="modal hide fade in" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-        <h3 id="myModalLabel">Modal header</h3>
+        <h3 id="myModalLabel">Account Settings</h3>
       </div>
       <div class="modal-body">
-        <p>Please login to continue...</p>
-          <form class="navbar-form" method="post" action="login.html">
-            <input class="span2" type="text" placeholder="Email">
-            <p></p>
-            <input class="span2" type="password" placeholder="Password">
-          </form>             
+        <p>Some Settings</p>         
       </div>
       <div class="modal-footer">
         <button class="btn" data-dismiss="modal" aria-hidden="true">Cancel</button>
-        <button type="submit" class="btn btn-primary size="30"">Sign in</button>
+        <button type="submit" class="btn btn-primary size="30"">Save</button>
       </div>
     </div>
 
-     <div class="container">
+    <div class="container">
 
       <!-- Breadcrumbs -->
       <ul class="breadcrumb">
@@ -94,27 +94,28 @@
       <div class="row">
         <div class="span12">
           <h1>Login Successful</h1>
-          <p>Welcome to the member area.</p>
+          <p></p>
+          <p>If your browser doesn't take you home within a few seconds then please 
+          <a href="index.html">Click here.</a></p>
         </div>
-      <!-- End Main Text -->    
-    </div>
+      </div>
 
       <hr>
       
       <footer>
         <div class="row">
           <div class="span4">
-          <p>&copy; Oval Ski Club 2012 |  Made with 
-          <a target="_blank" href="http://getbootstrap.com">Bootstrap.</a></p>
+            <p>&copy; Oval Ski Club 2012 |  Made with 
+            <a target="_blank" href="http://getbootstrap.com">Bootstrap.</a> | <a href="access.html" accesskey="K"> Access Keys</a></p>
           </div>
           <div class="pull-right">       
-            <a href="http://www.facebook.com/group.php?gid=2256597544" target="_blank"> <img src="assets/img/facebook.png" height="25" width="25" alt="Facebook"/></a>
-            <a href="http://www.twitter.com" target="_blank"> <img src="assets/img/twitter.png" height="25" width="25" alt="Twitter"/></a>
+            <a href="http://www.facebook.com/group.php?gid=2256597544" target="_blank" accesskey="G"> <img src="assets/img/facebook.png" height="25" width="25" alt="Facebook"/></a>
+            <a href="http://www.twitter.com" target="_blank" accesskey="T"> <img src="assets/img/twitter.png" height="25" width="25" alt="Twitter"/></a>
             <a class="btn btn-mini"  href="#"><i class="icon-chevron-up"></i> To the top.</a>
           </div>
         </div>
       </footer>
-
+      
     </div>     <!-- /container -->
 
         <!-- The javascript
